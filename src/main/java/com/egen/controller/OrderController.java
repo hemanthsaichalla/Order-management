@@ -15,10 +15,10 @@ public class OrderController {
      * implement the following endpoints
      */
 
-    @GetMapping("order")
+    @GetMapping("/order")
     public ResponseEntity<List<Order>> getAllOrders(){
         //TODO
-        return ResponseEntity.ok(Collections.singletonList(new Order("id")));
+        return ResponseEntity.ok(Collections.singletonList(new Order()));
     }
 
     public ResponseEntity<List<Order>> getOrderById(String id){
