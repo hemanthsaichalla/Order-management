@@ -1,5 +1,7 @@
 package com.egen.model;
 
+import java.util.UUID;
+
 public class Order {
     private String order_id;
     private OrderStatus order_status;
@@ -11,6 +13,10 @@ public class Order {
     private Billing billing;
     private Shipping shipping;
 
+    public Order() {
+        this.order_id = UUID.randomUUID().toString();
+        this.order_status = OrderStatus.ORDER_PENDING;
+    }
     public String getOrder_id() {
         return order_id;
     }
