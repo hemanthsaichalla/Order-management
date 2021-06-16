@@ -1,7 +1,9 @@
 package com.egen.model;
 
+import javax.persistence.Entity;
 import java.util.UUID;
 
+@Entity
 public class Shipping {
     private String shipping_id;
     private String order_id;
